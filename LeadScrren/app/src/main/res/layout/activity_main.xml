@@ -11,37 +11,53 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="@string/choose"
         android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/www"
-        android:layout_below="@+id/textView"/>
+        android:text="@string/whwToScreen"
+        android:layout_below="@+id/textView"
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/leadLevel"
+        android:text="@string/manageLevels"
         android:layout_below="@+id/www"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/signs"
+        android:text="@string/symptoms"
         android:layout_below="@+id/leadLevel"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/riskSurvey"
+        android:text="@string/risksurvey"
         android:layout_below="@+id/signs"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/highEvaluation"
+        android:text="@string/evaluation"
         android:layout_below="@+id/riskSurvey"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/differGuideline"
+        android:text="@string/guideline"
+        android:layout_below="@+id/highEvaluation"/>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -52,24 +68,33 @@
             android:layout_width="87dp"
             android:layout_height="wrap_content"
             android:id="@+id/leadScreen"
+            android:text="@string/mainscreen"
+            android:textSize="@dimen/bottom_button"
             />
         <Button
             android:layout_width="87dp"
             android:layout_height="wrap_content"
             android:id="@+id/disclaimer"
             android:layout_toRightOf="@+id/leadScreen"
+            android:text="@string/disclaimer"
+            android:textSize="@dimen/bottom_button"
+            android:onClick="openDisclaimerScreen"
             />
         <Button
             android:layout_width="87dp"
             android:layout_height="wrap_content"
             android:id="@+id/aboutapp"
             android:layout_toRightOf="@+id/disclaimer"
+            android:text="@string/aboutapp"
+            android:textSize="@dimen/bottom_button"
             />
         <Button
             android:layout_width="87dp"
             android:layout_height="wrap_content"
             android:id="@+id/references"
             android:layout_toRightOf="@+id/aboutapp"
+            android:text="@string/reference"
+            android:textSize="@dimen/bottom_button"
             />
     </RelativeLayout>
 

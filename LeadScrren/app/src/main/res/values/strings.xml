@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">LeadScreen</string>
+    <string name="app_name">Lead Screen</string>
     <string name="choose"> Choose a Lead Screening resource</string>
+    <string name="whwToScreen">Who,How,When to Screen</string>
+    <string name="manageLevels">How to Manage Lead Levels</string>
+    <string name="symptoms">Signs/Symptoms Lead Poisoning</string>
+    <string name="risksurvey">Lead Exposure Risk Survey</string>
+    <string name="evaluation">High Lead Level Evaluation</string>
+    <string name="guideline">Differing Guidelines</string>
+    <string name="mainscreen">Lead Screen</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="aboutapp">About App</string>
+    <string name="reference">References</string>
 
 </resources>
