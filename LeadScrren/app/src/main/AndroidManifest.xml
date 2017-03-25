@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Disclaimer"></activity>
+        <activity android:name=".Disclaimer" />
+        <activity android:name=".AboutApp" />
+        <activity android:name=".Reference"></activity>
     </application>
 
 </manifest>

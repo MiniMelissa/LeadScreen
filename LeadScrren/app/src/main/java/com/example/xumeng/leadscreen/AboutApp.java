@@ -5,20 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Disclaimer extends AppCompatActivity {
+public class AboutApp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_disclaimer);
+        setContentView(R.layout.activity_about_app);
     }
 
-    public void openLeadScreen(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+    public void openDisclaimerScreen(View view){
+        Intent intent = new Intent(this, Disclaimer.class);
         startActivity(intent);
     }
-    public void openAppScreen(View view){
-        Intent intent = new Intent(this, AboutApp.class);
+    public void openLeadScreen(View view){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
     public void openReferenceScreen(View view){

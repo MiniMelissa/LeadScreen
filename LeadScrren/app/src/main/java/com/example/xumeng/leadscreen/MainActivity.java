@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Disclaimer.class);
         startActivity(intent);
     }
- /*   public void openAppScreen(View view){
-        Intent intent = new Intent(this, AppScreen.class);
+    public void openAppScreen(View view){
+        Intent intent = new Intent(this, AboutApp.class);
         startActivity(intent);
     }
     public void openReferenceScreen(View view){
-        Intent intent = new Intent(this, ReferenceScreen.class);
+        Intent intent = new Intent(this, Reference.class);
         startActivity(intent);
-    }*/
+    }
 
 }
