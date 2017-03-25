@@ -1,110 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.xumeng.leadscreen.MainActivity">
 
-    <TextView
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:text="@string/choose"-->
+        <!--android:id="@+id/textView"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/www"-->
+        <!--android:text="@string/whwToScreen"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:onClick="openWHWScreen"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/leadLevel"-->
+        <!--android:text="@string/manageLevels"-->
+        <!--android:layout_below="@+id/www"-->
+        <!--android:onClick="openLevelScreen"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/signs"-->
+        <!--android:text="@string/symptoms"-->
+        <!--android:layout_below="@+id/leadLevel"-->
+        <!--android:onClick="openSymptomsScreen"/>-->
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/riskSurvey"-->
+        <!--android:text="@string/risksurvey"-->
+        <!--android:layout_below="@+id/signs"-->
+        <!--android:onClick="openSurveyScreen"/>-->
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/highEvaluation"-->
+        <!--android:text="@string/evaluation"-->
+        <!--android:layout_below="@+id/riskSurvey"-->
+        <!--android:onClick="openEvaluationScreen"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/differGuideline"-->
+        <!--android:text="@string/guideline"-->
+        <!--android:layout_below="@+id/highEvaluation"-->
+        <!--android:onClick="openGuideLineScreen"/>-->
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+        <!--<Button-->
+            <!--android:layout_width="87dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/leadScreen"-->
+            <!--android:text="@string/mainscreen"-->
+            <!--android:textSize="@dimen/bottom_button"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="87dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/disclaimer"-->
+            <!--android:layout_toRightOf="@+id/leadScreen"-->
+            <!--android:text="@string/disclaimer"-->
+            <!--android:textSize="@dimen/bottom_button"-->
+            <!--android:onClick="openDisclaimerScreen"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="87dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/aboutapp"-->
+            <!--android:layout_toRightOf="@+id/disclaimer"-->
+            <!--android:text="@string/aboutapp"-->
+            <!--android:textSize="@dimen/bottom_button"-->
+            <!--android:onClick="openAppScreen"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="87dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/references"-->
+            <!--android:layout_toRightOf="@+id/aboutapp"-->
+            <!--android:text="@string/reference"-->
+            <!--android:textSize="@dimen/bottom_button"-->
+            <!--android:onClick="openReferenceScreen"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/choose"
-        android:id="@+id/textView"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/www"
-        android:text="@string/whwToScreen"
-        android:layout_below="@+id/textView"
-        android:onClick="openWHWScreen"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/leadLevel"
-        android:text="@string/manageLevels"
-        android:layout_below="@+id/www"
-        android:onClick="openLevelScreen"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signs"
-        android:text="@string/symptoms"
-        android:layout_below="@+id/leadLevel"
-        android:onClick="openSymptomsScreen"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/riskSurvey"
-        android:text="@string/risksurvey"
-        android:layout_below="@+id/signs"
-        android:onClick="openSurveyScreen"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/highEvaluation"
-        android:text="@string/evaluation"
-        android:layout_below="@+id/riskSurvey"
-        android:onClick="openEvaluationScreen"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/differGuideline"
-        android:text="@string/guideline"
-        android:layout_below="@+id/highEvaluation"
-        android:onClick="openGuideLineScreen"/>
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FF4081"
+        app:tabTextColor="#000">
+    </android.support.design.widget.TabLayout>
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true">
-
-        <Button
-            android:layout_width="87dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/leadScreen"
-            android:text="@string/mainscreen"
-            android:textSize="@dimen/bottom_button"
-            />
-        <Button
-            android:layout_width="87dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/disclaimer"
-            android:layout_toRightOf="@+id/leadScreen"
-            android:text="@string/disclaimer"
-            android:textSize="@dimen/bottom_button"
-            android:onClick="openDisclaimerScreen"
-            />
-        <Button
-            android:layout_width="87dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/aboutapp"
-            android:layout_toRightOf="@+id/disclaimer"
-            android:text="@string/aboutapp"
-            android:textSize="@dimen/bottom_button"
-            android:onClick="openAppScreen"
-            />
-        <Button
-            android:layout_width="87dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/references"
-            android:layout_toRightOf="@+id/aboutapp"
-            android:text="@string/reference"
-            android:textSize="@dimen/bottom_button"
-            android:onClick="openReferenceScreen"
-            />
-    </RelativeLayout>
-
-</RelativeLayout>
+</LinearLayout>

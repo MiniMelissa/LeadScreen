@@ -1,13 +1,27 @@
 package com.example.xumeng.leadscreen;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
-public class Disclaimer extends AppCompatActivity {
+public class Disclaimer extends Fragment {
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_disclaimer,container,false);
+    }
 
     @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+    }
+
+
+  /*  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disclaimer);
@@ -24,5 +38,5 @@ public class Disclaimer extends AppCompatActivity {
     public void openReferenceScreen(View view){
         Intent intent = new Intent(this, Reference.class);
         startActivity(intent);
-    }
+    }*/
 }

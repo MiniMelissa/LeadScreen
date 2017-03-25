@@ -14,45 +14,4 @@
         android:layout_height="wrap_content"
         android:text="@string/choose"/>
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true">
-
-        <Button
-            android:layout_width="87dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/leadScreen"
-            android:text="@string/mainscreen"
-            android:textSize="@dimen/bottom_button"
-            android:onClick="openLeadScreen"
-            />
-        <Button
-            android:layout_width="87dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/disclaimer"
-            android:layout_toRightOf="@+id/leadScreen"
-            android:text="@string/disclaimer"
-            android:textSize="@dimen/bottom_button"
-            android:onClick="openDisclaimerScreen"
-            />
-        <Button
-            android:layout_width="87dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/aboutapp"
-            android:layout_toRightOf="@+id/disclaimer"
-            android:text="@string/aboutapp"
-            android:textSize="@dimen/bottom_button"
-            android:onClick="openAppScreen"
-            />
-        <Button
-            android:layout_width="87dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/references"
-            android:layout_toRightOf="@+id/aboutapp"
-            android:text="@string/reference"
-            android:textSize="@dimen/bottom_button"
-            />
-    </RelativeLayout>
 </RelativeLayout>

@@ -1,7 +1,9 @@
-package com.example.xumeng.leadscreen;
+package com.example.xumeng.leadscreen.LeadScreen;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.xumeng.leadscreen.R;
 
 public class LevelScreen extends AppCompatActivity {
 
