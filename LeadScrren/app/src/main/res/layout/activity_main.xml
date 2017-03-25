@@ -24,6 +24,7 @@
         android:id="@+id/www"
         android:text="@string/whwToScreen"
         android:layout_below="@+id/textView"
+        android:onClick="openWHWScreen"
         />
 
     <Button
@@ -31,32 +32,38 @@
         android:layout_height="wrap_content"
         android:id="@+id/leadLevel"
         android:text="@string/manageLevels"
-        android:layout_below="@+id/www"/>
+        android:layout_below="@+id/www"
+        android:onClick="openLevelScreen"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/signs"
         android:text="@string/symptoms"
-        android:layout_below="@+id/leadLevel"/>
+        android:layout_below="@+id/leadLevel"
+        android:onClick="openSymptomsScreen"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/riskSurvey"
         android:text="@string/risksurvey"
-        android:layout_below="@+id/signs"/>
+        android:layout_below="@+id/signs"
+        android:onClick="openSurveyScreen"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/highEvaluation"
         android:text="@string/evaluation"
-        android:layout_below="@+id/riskSurvey"/>
+        android:layout_below="@+id/riskSurvey"
+        android:onClick="openEvaluationScreen"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/differGuideline"
         android:text="@string/guideline"
-        android:layout_below="@+id/highEvaluation"/>
+        android:layout_below="@+id/highEvaluation"
+        android:onClick="openGuideLineScreen"/>
 
 
     <RelativeLayout

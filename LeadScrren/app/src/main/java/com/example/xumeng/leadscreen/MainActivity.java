@@ -5,6 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.xumeng.leadscreen.LeadScreen.EvaluationScreen;
+import com.example.xumeng.leadscreen.LeadScreen.GuideLineScreen;
+import com.example.xumeng.leadscreen.LeadScreen.SurveyScreen;
+import com.example.xumeng.leadscreen.LeadScreen.Symptoms;
+import com.example.xumeng.leadscreen.LeadScreen.WHWScreen;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-  /*  public void openWHWScreen(View view){
+    public void openWHWScreen(View view){
         Intent intent = new Intent(this, WHWScreen.class);
         startActivity(intent);
     }
@@ -24,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openSymptomsScreen(View view){
-        Intent intent = new Intent(this, SymptomsScreen.class);
+        Intent intent = new Intent(this, Symptoms.class);
         startActivity(intent);
     }
 
@@ -40,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
     public void openGuideLineScreen(View view){
         Intent intent = new Intent(this, GuideLineScreen.class);
         startActivity(intent);
-    }*/
+    }
+
     public void openDisclaimerScreen(View view){
         Intent intent = new Intent(this, Disclaimer.class);
         startActivity(intent);
