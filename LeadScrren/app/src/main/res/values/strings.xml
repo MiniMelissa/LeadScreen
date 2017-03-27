@@ -13,7 +13,17 @@
     <string name="reference">References</string>
     <string name="LeadRiskSurvey">Lead Exposure Risk Survey</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <!--TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selectTestResult">Select the lead level result (ug/dL):</string>
 
+    <!--test result-->
+    <string name="five"> &gt; 5 ug/dL</string>
+    <string name="nine">5 &#8211; 9</string>
+    <string name="onefour">10 &#8211; 14</string>
+    <string name="twofour">15 &#8211; 24</string>
+    <string name="fourfour">25 &#8211; 44</string>
+    <string name="fivenine">45 &#8211; 59</string>
+    <string name="sixnine">60 &#8211; 69</string>
+    <string name="seventy">&gt;= 70</string>
 </resources>

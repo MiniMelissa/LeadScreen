@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeadScreen.Levels.CVTestFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="level screen"
+            android:id="@+id/question"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/capillary"
+            android:text="capillary"
+            android:layout_below="@+id/question"
+            android:onClick="openCappilary"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/venous"
+            android:text="venous"
+            android:layout_below="@+id/capillary"
+            android:onClick="openVenous"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="level screen"
+            android:layout_below="@+id/venous"/>
+
+    </RelativeLayout>
+</FrameLayout>

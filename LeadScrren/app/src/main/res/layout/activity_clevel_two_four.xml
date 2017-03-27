@@ -8,10 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context=".LeadScreen.Levels.LevelScreen">
-
+    tools:context="com.example.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelTwoFour">
     <include layout="@layout/activity_base"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 </LinearLayout>
