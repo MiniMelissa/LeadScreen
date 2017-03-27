@@ -1,13 +1,12 @@
-package com.example.xumeng.leadscreen.LeadScreen;
+package com.example.xumeng.leadscreen.LeadScreen.WHW;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.xumeng.leadscreen.BaseActivity;
-import com.example.xumeng.leadscreen.LeadScreen.WHW.LeadRiskSurvey;
+import com.example.xumeng.leadscreen.LeadScreen.Survey.SurveyScreen;
 import com.example.xumeng.leadscreen.R;
-import com.example.xumeng.leadscreen.WHWFragment;
 
 public class WHWScreen extends BaseActivity {
 
@@ -33,7 +32,7 @@ public class WHWScreen extends BaseActivity {
     }
 
     public void openLeadRiskSurvey(View view){
-        Intent intent=new Intent(this, LeadRiskSurvey.class);
+        Intent intent=new Intent(this, SurveyScreen.class);
         startActivity(intent);
     }
 

@@ -1,4 +1,4 @@
-package com.example.xumeng.leadscreen;
+package com.example.xumeng.leadscreen.LeadScreen.WHW;
 
 
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.xumeng.leadscreen.R;
 
 
 /**

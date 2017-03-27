@@ -20,17 +20,16 @@
         <fragment android:name=".AboutApp" />
         <fragment android:name=".Reference" />
 
-        <activity android:name=".LeadScreen.WHWScreen" />
+        <activity android:name=".LeadScreen.WHW.WHWScreen" />
         <fragment android:name=".MainLeadScreen" />
 
-        <activity android:name=".LeadScreen.Symptoms" />
-        <activity android:name=".LeadScreen.SurveyScreen" />
-        <activity android:name=".LeadScreen.EvaluationScreen" />
-        <activity android:name=".LeadScreen.GuideLineScreen" />
+        <activity android:name=".LeadScreen.SignLeadPoison.Symptoms" />
+        <activity android:name=".LeadScreen.Survey.SurveyScreen" />
+        <activity android:name=".LeadScreen.Evaluation.EvaluationScreen" />
+        <activity android:name=".LeadScreen.GuideLine.GuideLineScreen" />
 
 
-        <activity android:name=".LeadScreen.LevelScreen" />
-        <activity android:name=".LeadScreen.WHW.LeadRiskSurvey" />
+        <activity android:name=".LeadScreen.Levels.LevelScreen" />
 
 
         <activity android:name=".BaseActivity"></activity>

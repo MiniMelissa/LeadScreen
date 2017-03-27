@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.xumeng.leadscreen.LeadScreen.EvaluationScreen;
-import com.example.xumeng.leadscreen.LeadScreen.GuideLineScreen;
-import com.example.xumeng.leadscreen.LeadScreen.LevelScreen;
-import com.example.xumeng.leadscreen.LeadScreen.SurveyScreen;
-import com.example.xumeng.leadscreen.LeadScreen.Symptoms;
-import com.example.xumeng.leadscreen.LeadScreen.WHWScreen;
+import com.example.xumeng.leadscreen.LeadScreen.Evaluation.EvaluationScreen;
+import com.example.xumeng.leadscreen.LeadScreen.GuideLine.GuideLineScreen;
+import com.example.xumeng.leadscreen.LeadScreen.Levels.LevelScreen;
+import com.example.xumeng.leadscreen.LeadScreen.Survey.SurveyScreen;
+import com.example.xumeng.leadscreen.LeadScreen.SignLeadPoison.Symptoms;
+import com.example.xumeng.leadscreen.LeadScreen.WHW.WHWScreen;
 
 public class MainActivity extends BaseActivity {
 
