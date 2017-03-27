@@ -12,7 +12,7 @@ public class Disclaimer extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_disclaimer,container,false);
+        return inflater.inflate(R.layout.fragment_disclaimer,container,false);
     }
 
     @Override
@@ -24,7 +24,7 @@ public class Disclaimer extends Fragment {
   /*  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_disclaimer);
+        setContentView(R.layout.fragment_disclaimer);
     }
 
     public void openLeadScreen(View view){

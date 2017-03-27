@@ -15,17 +15,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <fragment android:name=".Disclaimer" />
         <fragment android:name=".AboutApp" />
         <fragment android:name=".Reference" />
+
+        <activity android:name=".LeadScreen.WHWScreen" />
+        <fragment android:name=".MainLeadScreen" />
+
         <activity android:name=".LeadScreen.Symptoms" />
         <activity android:name=".LeadScreen.SurveyScreen" />
         <activity android:name=".LeadScreen.EvaluationScreen" />
         <activity android:name=".LeadScreen.GuideLineScreen" />
-        <activity android:name=".LeadScreen.WHWScreen" />
+
+
         <activity android:name=".LeadScreen.LevelScreen" />
         <activity android:name=".LeadScreen.WHW.LeadRiskSurvey" />
-        <fragment android:name=".MainLeadScreen" />
+
+
+        <activity android:name=".BaseActivity"></activity>
     </application>
 
 </manifest>

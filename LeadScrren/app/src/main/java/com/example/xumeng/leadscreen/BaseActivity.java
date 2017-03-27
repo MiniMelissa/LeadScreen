@@ -1,42 +1,31 @@
 package com.example.xumeng.leadscreen;
 
-import android.content.Intent;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
-import com.example.xumeng.leadscreen.LeadScreen.EvaluationScreen;
-import com.example.xumeng.leadscreen.LeadScreen.GuideLineScreen;
-import com.example.xumeng.leadscreen.LeadScreen.LevelScreen;
-import com.example.xumeng.leadscreen.LeadScreen.SurveyScreen;
-import com.example.xumeng.leadscreen.LeadScreen.Symptoms;
-import com.example.xumeng.leadscreen.LeadScreen.WHWScreen;
+public class BaseActivity extends AppCompatActivity {
 
-public class MainActivity extends BaseActivity {
-
- /*   protected ViewPager mViewPager;
+    protected ViewPager mViewPager;
     protected TabLayout mTabLayout;
 
     protected TabLayout.Tab one;
     protected TabLayout.Tab two;
     protected TabLayout.Tab three;
     protected TabLayout.Tab four;
-*/
-    private Button whw;
-//    FragmentManager fragmentManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_base);
         initViews(new MainLeadScreen());
         initEvents();
-//        fragmentManager = getSupportFragmentManager();
-
-//        pressButton();
     }
 
-  /*  protected void initViews(){
+    protected void initViews(final Fragment fragment){
         mViewPager=(ViewPager) findViewById(R.id.viewPager);
         mTabLayout=(TabLayout) findViewById(R.id.tabLayout);
 
@@ -52,7 +41,7 @@ public class MainActivity extends BaseActivity {
                 }else if (position==3){
                     return new Reference();
                 }
-                return new MainLeadScreen();
+                return fragment;
             }
 
             @Override
@@ -121,58 +110,6 @@ public class MainActivity extends BaseActivity {
             }
         });
     }
-*/
- /*   public void openWHWScreen(View view){
-        Fragment fragment = new FragmentTest();
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.mainLayout, fragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-    }*/
 
-/*   private void pressButton(){
-        whw=(Button) findViewById(R.id.www);
-        whw.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Fragment fragment = new WHWScreen();
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.whwfragment, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });
-    }
-*/
-    public void openWHWScreen(View view){
-        Intent intent = new Intent(this, WHWScreen.class);
-        startActivity(intent);
-    }
-
-    public void openLevelScreen(View view){
-        Intent intent = new Intent(this, LevelScreen.class);
-        startActivity(intent);
-    }
-
-    public void openSymptomsScreen(View view){
-        Intent intent = new Intent(this, Symptoms.class);
-        startActivity(intent);
-    }
-
-    public void openSurveyScreen(View view){
-        Intent intent = new Intent(this, SurveyScreen.class);
-        startActivity(intent);
-    }
-
-    public void openEvaluationScreen(View view){
-        Intent intent = new Intent(this, EvaluationScreen.class);
-        startActivity(intent);
-    }
-    public void openGuideLineScreen(View view){
-        Intent intent = new Intent(this, GuideLineScreen.class);
-        startActivity(intent);
-    }
 
 }

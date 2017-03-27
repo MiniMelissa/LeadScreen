@@ -12,7 +12,7 @@ public class AboutApp extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_about_app,container,false);
+        return inflater.inflate(R.layout.fragment_about_app,container,false);
     }
 
     @Override
