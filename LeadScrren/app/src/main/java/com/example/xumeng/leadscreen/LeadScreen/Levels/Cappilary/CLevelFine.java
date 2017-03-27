@@ -12,5 +12,7 @@ public class CLevelFine extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clevel_fine);
         initViews(new CLevelFineFragment());
+        setTitle("Capillary < 5 ug/dL");
+
     }
 }

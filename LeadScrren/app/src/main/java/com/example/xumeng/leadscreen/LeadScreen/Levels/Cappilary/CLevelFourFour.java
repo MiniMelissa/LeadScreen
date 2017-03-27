@@ -13,5 +13,7 @@ public class CLevelFourFour extends BaseActivity {
         setContentView(R.layout.activity_clevel_four_four);
         initViews(new CLevelFourFourFragment());
         initEvents();
+        setTitle("Capillary 25-44 ug/dL");
+
     }
 }

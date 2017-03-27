@@ -13,5 +13,6 @@ public class GuideLineScreen extends BaseActivity {
         setContentView(R.layout.activity_guide_line_screen);
         initViews(new GuideFragment());
         initEvents();
+        setTitle("Differing Guidelines");
     }
 }

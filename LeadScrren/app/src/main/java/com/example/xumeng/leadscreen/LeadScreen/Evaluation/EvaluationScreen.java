@@ -13,5 +13,7 @@ public class EvaluationScreen extends BaseActivity {
         setContentView(R.layout.activity_evaluation_screen);
         initViews(new EvaluationFragment());
         initEvents();
+        setTitle("High Lead Eval");
+
     }
 }

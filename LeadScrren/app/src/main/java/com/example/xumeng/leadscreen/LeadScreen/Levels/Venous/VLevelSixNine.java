@@ -13,6 +13,8 @@ public class VLevelSixNine extends BaseActivity {
         setContentView(R.layout.activity_vlevel_six_nine);
         initViews(new VLevelSixNineFragment());
         initEvents();
+        setTitle("Venous 60-69 ug/dL");
+
     }
 
 }

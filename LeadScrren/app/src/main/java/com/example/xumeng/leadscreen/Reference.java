@@ -13,6 +13,7 @@ public class Reference extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//        getActivity().setTitle("Reference");
         return inflater.inflate(R.layout.fragment_reference,container,false);
     }
 

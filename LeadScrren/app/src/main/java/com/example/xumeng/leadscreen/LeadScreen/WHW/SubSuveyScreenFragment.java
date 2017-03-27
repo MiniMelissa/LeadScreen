@@ -10,19 +10,17 @@ import android.view.ViewGroup;
 
 import com.example.xumeng.leadscreen.R;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
-public class WHWFragment extends Fragment {
+public class SubSuveyScreenFragment extends Fragment {
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        getActivity().setTitle("Who How When");
-        return inflater.inflate(R.layout.fragment_whw,container,false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_sub_suvey_screen, container, false);
     }
-
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

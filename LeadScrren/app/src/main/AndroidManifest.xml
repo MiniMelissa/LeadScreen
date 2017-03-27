@@ -20,34 +20,85 @@
         <fragment android:name=".AboutApp" />
         <fragment android:name=".Reference" />
 
-        <activity android:name=".LeadScreen.WHW.WHWScreen" />
+        <activity
+            android:name=".LeadScreen.WHW.WHWScreen"
+            android:parentActivityName=".MainActivity" />
 
         <fragment android:name=".MainLeadScreen" />
 
-        <activity android:name=".LeadScreen.SignLeadPoison.Symptoms" />
-        <activity android:name=".LeadScreen.Survey.SurveyScreen" />
-        <activity android:name=".LeadScreen.Evaluation.EvaluationScreen" />
-        <activity android:name=".LeadScreen.GuideLine.GuideLineScreen" />
-        <activity android:name=".LeadScreen.Levels.LevelScreen" />
+        <activity android:name=".LeadScreen.WHW.SubSuveyScreen" android:parentActivityName=".LeadScreen.WHW.WHWScreen"></activity>
+
+        <activity
+            android:name=".LeadScreen.SignLeadPoison.Symptoms"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LeadScreen.Survey.SurveyScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LeadScreen.Evaluation.EvaluationScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LeadScreen.GuideLine.GuideLineScreen"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LeadScreen.Levels.LevelScreen"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".BaseActivity" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CappilaryTest" />
-        <activity android:name=".LeadScreen.Levels.Venous.VenousTest" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CLevelFine" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CLevelNine" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CLevelTwoFour" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CLevelFourFour" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CLevelOneFour" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CLevelFiveNine" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CLevelSixNine" />
-        <activity android:name=".LeadScreen.Levels.Cappilary.CLevelSeventy" />
-        <activity android:name=".LeadScreen.Levels.Venous.VLevelFive" />
-        <activity android:name=".LeadScreen.Levels.Venous.VLevelNine" />
-        <activity android:name=".LeadScreen.Levels.Venous.VLevelOneFour" />
-        <activity android:name=".LeadScreen.Levels.Venous.VLevelTwoFour" />
-        <activity android:name=".LeadScreen.Levels.Venous.VLevelFourFour" />
-        <activity android:name=".LeadScreen.Levels.Venous.VLevelFiveNine" />
-        <activity android:name=".LeadScreen.Levels.Venous.VLevelSixNine" />
-        <activity android:name=".LeadScreen.Levels.Venous.VLevelSeventy"></activity>
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CappilaryTest"
+            android:parentActivityName=".LeadScreen.Levels.LevelScreen" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VenousTest"
+            android:parentActivityName=".LeadScreen.Levels.LevelScreen" />
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CLevelFine"
+            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CLevelNine"
+            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CLevelTwoFour"
+            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CLevelFourFour"
+            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CLevelOneFour"
+            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CLevelFiveNine"
+            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CLevelSixNine"
+            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Cappilary.CLevelSeventy"
+            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VLevelFive"
+            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VLevelNine"
+            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VLevelOneFour"
+            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VLevelTwoFour"
+            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VLevelFourFour"
+            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VLevelFiveNine"
+            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VLevelSixNine"
+            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+        <activity
+            android:name=".LeadScreen.Levels.Venous.VLevelSeventy"
+            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+
     </application>
 
 </manifest>

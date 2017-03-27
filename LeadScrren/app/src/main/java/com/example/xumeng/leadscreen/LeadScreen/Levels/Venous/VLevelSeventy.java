@@ -13,5 +13,7 @@ public class VLevelSeventy extends BaseActivity {
         setContentView(R.layout.activity_vlevel_seventy);
         initViews(new VLevelSeventyFragment());
         initEvents();
+        setTitle("Venous >= 70 ug/dL");
+
     }
 }

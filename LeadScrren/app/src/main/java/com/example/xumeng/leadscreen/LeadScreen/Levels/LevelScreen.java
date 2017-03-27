@@ -17,6 +17,7 @@ public class LevelScreen extends BaseActivity {
         setContentView(R.layout.activity_level_screen);
         initViews(new CVTestFragment());
         initEvents();
+        setTitle("Capillary & Venous");
     }
 
     public void openCappilary(View view){

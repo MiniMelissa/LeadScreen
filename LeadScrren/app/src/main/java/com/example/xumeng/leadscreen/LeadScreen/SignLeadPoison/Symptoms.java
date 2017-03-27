@@ -13,5 +13,7 @@ public class Symptoms extends BaseActivity {
         setContentView(R.layout.activity_symptoms);
         initViews(new SymptonFragment());
         initEvents();
+        setTitle("Signs & Symptoms");
+
     }
 }

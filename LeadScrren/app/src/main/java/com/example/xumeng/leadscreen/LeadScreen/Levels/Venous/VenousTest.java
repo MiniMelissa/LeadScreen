@@ -15,6 +15,8 @@ public class VenousTest extends BaseActivity {
         setContentView(R.layout.activity_venous_test);
         initViews(new VenousFragment());
         initEvents();
+        setTitle("Venous Sample");
+
     }
 
     public void onClick(View view) {

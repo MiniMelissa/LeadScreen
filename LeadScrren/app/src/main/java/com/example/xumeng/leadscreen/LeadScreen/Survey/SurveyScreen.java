@@ -14,6 +14,8 @@ public class SurveyScreen extends BaseActivity {
 
         initViews(new RiskSurveyFragment());
         initEvents();
+        setTitle("Risk Survey");
+
     }
 
 

@@ -13,5 +13,7 @@ public class CLevelSixNine extends BaseActivity {
         setContentView(R.layout.activity_clevel_six_nine);
         initViews(new CLevelSixNineFragment());
         initEvents();
+        setTitle("Capillary 60-69 ug/dL");
+
     }
 }

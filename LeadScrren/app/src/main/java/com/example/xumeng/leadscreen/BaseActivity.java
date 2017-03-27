@@ -1,13 +1,13 @@
 package com.example.xumeng.leadscreen;
 
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragmentInteractionListener{
 
     protected ViewPager mViewPager;
     protected TabLayout mTabLayout;
@@ -23,6 +23,7 @@ public class BaseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_base);
         initViews(new MainLeadScreen());
         initEvents();
+
     }
 
     protected void initViews(final Fragment fragment){
@@ -109,6 +110,28 @@ public class BaseActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void removeAppBar() {
+       /* FragmentManager fragmentManager = getSupportFragmentManager();
+        List<Fragment> fragments = fragmentManager.getFragments();
+        if(fragments != null){
+            for(Fragment fragment : fragments){
+                int id=fragment.getId();
+                System.out.print(id);
+                System.out.print(R.id.reference);
+                if(id==R.id.reference){
+                    System.out.print(id);
+                    System.out.print(R.id.reference);
+
+                    getSupportActionBar().hide();
+
+                }
+            }
+        }
+//        Fragment current = getSupportFragmentManager().findFragmentById(R.id.reference);
+*/
     }
 
 

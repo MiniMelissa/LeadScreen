@@ -15,6 +15,8 @@ public class CappilaryTest extends BaseActivity {
         setContentView(R.layout.activity_cappilary_test);
         initViews(new CappilaryFragment());
         initEvents();
+        setTitle("Capillary Sample");
+
     }
 
     public void onClick(View view) {

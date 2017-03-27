@@ -13,5 +13,7 @@ public class VLevelFourFour extends BaseActivity {
         setContentView(R.layout.activity_vlevel_four_four);
         initViews(new VLevelFourFourFragment());
         initEvents();
+        setTitle("Venous 25-44 ug/dL");
+
     }
 }

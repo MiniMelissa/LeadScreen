@@ -13,5 +13,7 @@ public class CLevelSeventy extends BaseActivity {
         setContentView(R.layout.activity_clevel_seventy);
         initViews(new CLevelSeventyFragment());
         initEvents();
+        setTitle("Capillary >=70 ug/dL");
+
     }
 }
