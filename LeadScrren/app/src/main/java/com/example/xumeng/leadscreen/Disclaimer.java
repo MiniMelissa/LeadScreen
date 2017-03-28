@@ -6,19 +6,66 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Disclaimer extends Fragment {
 //    private OnFragmentInteractionListener mListener;
+
+    private String filename="Disclaimer";
+
 
    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //        getActivity().setTitle("Disclaimer");
-        return inflater.inflate(R.layout.fragment_disclaimer,container,false);
+
+//       View v = inflater.inflate(R.layout.fragment_disclaimer, container, false);
+       LinearLayout l = (LinearLayout)inflater.inflate(R.layout.fragment_disclaimer, container, false);
+       TextView tv = new TextView(container.getContext());
+       StringBuilder text = new StringBuilder();
+       readFile(text);
+       tv.setText(text.toString());
+       l.addView(tv);
+//       tv = new TextView(container.getContext());
+//       tv.setText("Testing1...");
+//       l.addView(tv);
+       return l;
+
+//        return inflater.inflate(R.layout.fragment_disclaimer,container,false);
     }
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+    }
+
+    private void readFile(StringBuilder text){
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(
+                    new InputStreamReader(getActivity().getAssets().open(filename)));
+
+            String mLine;
+            while ((mLine = reader.readLine()) != null) {
+                text.append(mLine);
+                text.append('\n');
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 /*
 
