@@ -26,5 +26,8 @@
     <string name="fivenine">45 &#8211; 59</string>
     <string name="sixnine">60 &#8211; 69</string>
     <string name="seventy">&gt;= 70</string>
+    <string name="start">The Lead Screening App presents guidance on screening and managing
+        childhood lead exposure based upon the New York State Dept. of Health guideline.</string>
+    <string name="getStated">Get Started</string>
 
 </resources>

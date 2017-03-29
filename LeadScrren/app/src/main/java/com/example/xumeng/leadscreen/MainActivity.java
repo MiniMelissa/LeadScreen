@@ -1,6 +1,9 @@
 package com.example.xumeng.leadscreen;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -11,7 +14,10 @@ import com.example.xumeng.leadscreen.LeadScreen.SignLeadPoison.Symptoms;
 import com.example.xumeng.leadscreen.LeadScreen.Survey.SurveyScreen;
 import com.example.xumeng.leadscreen.LeadScreen.WHW.WHWScreen;
 
-public class MainActivity extends BaseActivity{
+public class MainActivity extends BaseActivity {
+
+    private AlertDialog.Builder builder;
+    public static final String PREFS_NAME = "MyPrefsFile";
 
 //    FragmentManager fragmentManager;
     @Override
@@ -22,6 +28,18 @@ public class MainActivity extends BaseActivity{
         initViews(new MainLeadScreen());
         initEvents();
         setTitle("Lead Screen");
+
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        boolean dialogShown = settings.getBoolean("dialogShown", false);
+
+        if (!dialogShown) {
+            // AlertDialog code here
+            showSimpleDialog();
+
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putBoolean("dialogShown", true);
+            editor.commit();
+        }
 //        fragmentManager = getSupportFragmentManager();
 
     }
@@ -55,5 +73,24 @@ public class MainActivity extends BaseActivity{
         startActivity(intent);
     }
 
+    private void showSimpleDialog() {
+        builder=new AlertDialog.Builder(this);
+        builder.setIcon(R.mipmap.ic_launcher);
+//        builder.setTitle(R.string.simple_dialog);
+        builder.setMessage(R.string.start);
+
+        //监听下方button点击事件
+        builder.setPositiveButton(R.string.getStated, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+//                Toast.makeText(getApplicationContext(),R.string.toast_postive,Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //设置对话框是可取消的
+        builder.setCancelable(true);
+        AlertDialog dialog=builder.create();
+        dialog.show();
+    }
 
 }
