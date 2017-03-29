@@ -26,6 +26,8 @@ public class Disclaimer extends Fragment {
 
 //       View v = inflater.inflate(R.layout.fragment_disclaimer, container, false);
        LinearLayout l = (LinearLayout)inflater.inflate(R.layout.fragment_disclaimer, container, false);
+//       ScrollView s= new ScrollView(container.getContext());
+//       l.addView(s);
        TextView tv = new TextView(container.getContext());
        StringBuilder text = new StringBuilder();
        readFile(text);
@@ -53,7 +55,6 @@ public class Disclaimer extends Fragment {
             while ((mLine = reader.readLine()) != null) {
                 text.append(mLine);
                 text.append('\n');
-
             }
         } catch (IOException e) {
             e.printStackTrace();
