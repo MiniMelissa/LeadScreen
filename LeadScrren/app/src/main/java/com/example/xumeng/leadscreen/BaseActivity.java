@@ -65,10 +65,10 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
 
         //get icon from ios version
 
-        one.setIcon(getResources().getDrawable(R.mipmap.ic_launcher,null));
-        two.setIcon(getResources().getDrawable(R.mipmap.ic_launcher,null));
-        three.setIcon(getResources().getDrawable(R.mipmap.ic_launcher,null));
-        four.setIcon(getResources().getDrawable(R.mipmap.ic_launcher,null));
+        one.setIcon(getResources().getDrawable(R.drawable.ic_action_leadscreen,null));
+        two.setIcon(getResources().getDrawable(R.drawable.ic_action_disclaimer,null));
+        three.setIcon(getResources().getDrawable(R.drawable.ic_action_aboutapp,null));
+        four.setIcon(getResources().getDrawable(R.drawable.ic_action_reference,null));
 
     }
 
@@ -95,13 +95,13 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 if (tab == mTabLayout.getTabAt(0)) {
-                    one.setIcon(getResources().getDrawable(R.mipmap.ic_launcher));
+                    one.setIcon(getResources().getDrawable(R.drawable.ic_action_leadscreen,null));
                 } else if (tab == mTabLayout.getTabAt(1)) {
-                    two.setIcon(getResources().getDrawable(R.mipmap.ic_launcher));
+                    two.setIcon(getResources().getDrawable(R.drawable.ic_action_disclaimer,null));
                 } else if (tab == mTabLayout.getTabAt(2)) {
-                    three.setIcon(getResources().getDrawable(R.mipmap.ic_launcher));
+                    three.setIcon(getResources().getDrawable(R.drawable.ic_action_aboutapp,null));
                 }else if (tab == mTabLayout.getTabAt(3)){
-                    four.setIcon(getResources().getDrawable(R.mipmap.ic_launcher));
+                    four.setIcon(getResources().getDrawable(R.drawable.ic_action_reference,null));
                 }
             }
 

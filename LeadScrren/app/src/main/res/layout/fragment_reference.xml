@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:text="@string/reference"
         android:gravity="center_horizontal"/>
 

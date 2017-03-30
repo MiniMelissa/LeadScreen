@@ -3,7 +3,6 @@ package com.example.xumeng.leadscreen;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -18,6 +17,7 @@ public class MainActivity extends BaseActivity {
 
     private AlertDialog.Builder builder;
     public static final String PREFS_NAME = "MyPrefsFile";
+//    private boolean flag=true;
 
 //    FragmentManager fragmentManager;
     @Override
@@ -30,16 +30,18 @@ public class MainActivity extends BaseActivity {
         setTitle("Lead Screen");
 
         //apear only when first run app
-        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+      /*  SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         boolean dialogShown = settings.getBoolean("dialogShown", false);
-        if (!dialogShown) {
+        String username = settings.getString("username", null);
+
+
+        if (dialogShown) {
             // AlertDialog code here
             showSimpleDialog();
-
             SharedPreferences.Editor editor = settings.edit();
             editor.putBoolean("dialogShown", true);
             editor.commit();
-        }
+        }*/
 //        fragmentManager = getSupportFragmentManager();
 
     }

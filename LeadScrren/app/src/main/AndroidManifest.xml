@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_leadscreen"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -26,7 +26,7 @@
 
         <fragment android:name=".MainLeadScreen" />
 
-        <activity android:name=".LeadScreen.WHW.SubSuveyScreen" android:parentActivityName=".LeadScreen.WHW.WHWScreen"></activity>
+        <activity android:name=".LeadScreen.WHW.SubSuveyScreen" android:parentActivityName=".LeadScreen.WHW.WHWScreen"/>
 
         <activity
             android:name=".LeadScreen.SignLeadPoison.Symptoms"

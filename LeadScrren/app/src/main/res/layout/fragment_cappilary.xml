@@ -23,56 +23,80 @@
             android:id="@+id/fiveug"
             android:text="@string/five"
             android:layout_below="@+id/cappilaryText"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/nineug"
             android:text="@string/nine"
             android:layout_below="@+id/fiveug"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/onefourug"
             android:text="@string/onefour"
             android:layout_below="@+id/nineug"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/twofourug"
             android:text="@string/twofour"
             android:layout_below="@+id/onefourug"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/fourfourug"
             android:text="@string/fourfour"
             android:layout_below="@+id/twofourug"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/fivenineug"
             android:text="@string/fivenine"
             android:layout_below="@+id/fourfourug"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/sixnineug"
             android:text="@string/sixnine"
             android:layout_below="@id/fivenineug"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/seventyug"
             android:text="@string/seventy"
             android:layout_below="@id/sixnineug"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            android:backgroundTint="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
 
     </RelativeLayout>
 
