@@ -9,6 +9,7 @@ import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,7 @@ public class VLevelFiveNineFragment extends Fragment {
         TextView textView=new TextView(container.getContext());
         textView.setText(getClickableSpan());
         textView.setMovementMethod(LinkMovementMethod.getInstance());
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         scrollView.addView(textView);
         l.addView(scrollView);
         return l;

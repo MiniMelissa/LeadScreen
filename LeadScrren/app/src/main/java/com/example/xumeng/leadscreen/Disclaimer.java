@@ -3,6 +3,7 @@ package com.example.xumeng.leadscreen;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,7 @@ public class Disclaimer extends Fragment {
        StringBuilder text = new StringBuilder();
        readFile(text);
        tv.setText(text.toString());
+       tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
        l.addView(tv);
 //       tv = new TextView(container.getContext());
 //       tv.setText("Testing1...");

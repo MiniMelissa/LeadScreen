@@ -4,6 +4,7 @@ package com.example.xumeng.leadscreen.LeadScreen.Levels;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,8 @@ public class CVTestFragment extends Fragment {
         readFile(s2,filename2);
         textView1.setText(s1.toString());
         textView2.setText(s2.toString());
+        textView1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+        textView2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         return v;
     }
     @Override

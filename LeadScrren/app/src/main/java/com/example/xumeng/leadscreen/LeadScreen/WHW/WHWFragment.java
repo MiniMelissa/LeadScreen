@@ -4,6 +4,7 @@ package com.example.xumeng.leadscreen.LeadScreen.WHW;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,7 @@ public class WHWFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_whw, container, false);
         TextView myTextView = (TextView)v.findViewById(R.id.whwtext);
         myTextView.setText(text.toString());
+        myTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         return v;
     }
 

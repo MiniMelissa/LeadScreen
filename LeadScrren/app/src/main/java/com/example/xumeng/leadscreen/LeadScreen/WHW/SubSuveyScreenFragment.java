@@ -9,6 +9,7 @@ import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.URLSpan;
 import android.text.style.UnderlineSpan;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +39,7 @@ public class SubSuveyScreenFragment extends Fragment {
         TextView tv1 = new TextView(container.getContext());
         tv1.setText(getClickableSpan());
         tv1.setMovementMethod(LinkMovementMethod.getInstance());
-
+        tv1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
         s.addView(tv1);
         l.addView(s);
         return l;

@@ -14,14 +14,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="level screen"
             android:id="@+id/question"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/capillary"
-            android:text="capillary"
+            android:text="@string/capillary"
             android:layout_below="@+id/question"
             android:onClick="openCappilary"
             android:backgroundTint="@android:color/white"
@@ -32,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/venous"
-            android:text="venous"
+            android:text="@string/venous"
             android:layout_below="@+id/capillary"
             android:onClick="openVenous"
             android:backgroundTint="@android:color/white"
@@ -43,7 +42,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="level screen"
             android:id="@+id/levelmark"
             android:layout_below="@+id/venous"/>
 
