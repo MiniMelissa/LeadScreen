@@ -4,6 +4,11 @@ package com.example.xumeng.leadscreen.LeadScreen.Levels.Cappilary;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
+import android.text.style.URLSpan;
+import android.text.style.UnderlineSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,9 +36,8 @@ public class CLevelFourFourFragment extends Fragment {
         LinearLayout l=(LinearLayout) inflater.inflate(R.layout.fragment_clevel_five_nine, container, false);
         ScrollView scrollView=new ScrollView(container.getContext());
         TextView textView=new TextView(container.getContext());
-        StringBuilder text=new StringBuilder();
-        readFile(text);
-        textView.setText(text.toString());
+        textView.setText(getClickableSpan());
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
         scrollView.addView(textView);
         l.addView(scrollView);
         return l;    }
@@ -66,5 +70,24 @@ public class CLevelFourFourFragment extends Fragment {
             }
         }
     }
+
+    private SpannableStringBuilder getClickableSpan() {
+        StringBuilder text = new StringBuilder();
+        readFile(text);
+        String s1=text.toString();
+        final String link1=getResources().getString(R.string.c1);
+        String content=s1+link1;
+
+        int start1=s1.length(),end1=start1+link1.length();
+        SpannableStringBuilder spanStr = new SpannableStringBuilder();
+        spanStr.append(content);
+        //set underline
+        spanStr.setSpan(new UnderlineSpan(),start1,end1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        //set link to web
+        spanStr.setSpan(new URLSpan(link1),start1,end1,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        return spanStr;
+    }
+
 
 }

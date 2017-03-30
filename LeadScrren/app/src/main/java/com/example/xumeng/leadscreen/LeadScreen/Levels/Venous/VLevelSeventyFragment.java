@@ -4,6 +4,11 @@ package com.example.xumeng.leadscreen.LeadScreen.Levels.Venous;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
+import android.text.style.URLSpan;
+import android.text.style.UnderlineSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +27,7 @@ import java.io.InputStreamReader;
  */
 public class VLevelSeventyFragment extends Fragment {
 
-    private String filename="Vseventy";
+    private String filename1="Vseventy",filename2="Vseventy2";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,9 +36,8 @@ public class VLevelSeventyFragment extends Fragment {
         LinearLayout l=(LinearLayout) inflater.inflate(R.layout.fragment_vlevel_seventy, container, false);
         ScrollView scrollView=new ScrollView(container.getContext());
         TextView textView=new TextView(container.getContext());
-        StringBuilder text=new StringBuilder();
-        readFile(text);
-        textView.setText(text.toString());
+        textView.setText(getClickableSpan());
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
         scrollView.addView(textView);
         l.addView(scrollView);
         return l;
@@ -45,7 +49,7 @@ public class VLevelSeventyFragment extends Fragment {
     }
 
 
-    private void readFile(StringBuilder text){
+    private void readFile(StringBuilder text,String filename){
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(
@@ -67,5 +71,27 @@ public class VLevelSeventyFragment extends Fragment {
                 }
             }
         }
+    }
+
+    private SpannableStringBuilder getClickableSpan() {
+        StringBuilder text = new StringBuilder();
+        readFile(text,filename1);
+        String s1=text.toString();
+        text = new StringBuilder();
+        readFile(text,filename2);
+        String s2=text.toString();
+
+        final String link1=getResources().getString(R.string.v1);
+        String content=s1+link1+'\n'+s2;
+
+        int start1=s1.length(),end1=start1+link1.length();
+        SpannableStringBuilder spanStr = new SpannableStringBuilder();
+        spanStr.append(content);
+        //set underline
+        spanStr.setSpan(new UnderlineSpan(),start1,end1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        //set link to web
+        spanStr.setSpan(new URLSpan(link1),start1,end1,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        return spanStr;
     }
 }

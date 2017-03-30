@@ -29,9 +29,9 @@ public class MainActivity extends BaseActivity {
         initEvents();
         setTitle("Lead Screen");
 
+        //apear only when first run app
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         boolean dialogShown = settings.getBoolean("dialogShown", false);
-
         if (!dialogShown) {
             // AlertDialog code here
             showSimpleDialog();
