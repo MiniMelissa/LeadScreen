@@ -45,7 +45,6 @@ public class AboutApp extends Fragment {
 
           l.addView(tv);
           return l;
-//          return inflater.inflate(R.layout.fragment_about_app, container, false);
       }
 
     @Override

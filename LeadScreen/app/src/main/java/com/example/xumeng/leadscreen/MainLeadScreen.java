@@ -19,7 +19,6 @@ public class MainLeadScreen extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        getActivity().setTitle("Lead Screen");
         Context context=getActivity();
 //        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         SharedPreferences settings = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);

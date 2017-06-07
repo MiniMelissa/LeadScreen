@@ -14,11 +14,6 @@ import android.view.ViewGroup;
 public class MoreApps extends Fragment {
 
 
-    public MoreApps() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

@@ -27,7 +27,6 @@ public class MainActivity extends BaseActivity {
 
         initViews(new MainLeadScreen());
         initEvents();
-        setTitle("Lead Screen");
 
         //apear only when first run app
       /*  SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);

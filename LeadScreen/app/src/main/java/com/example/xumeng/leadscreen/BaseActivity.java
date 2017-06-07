@@ -1,5 +1,6 @@
 package com.example.xumeng.leadscreen;
 
+
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,15 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
     protected TabLayout.Tab three;
     protected TabLayout.Tab four;
     protected TabLayout.Tab five;
+    private String[] mTitles = new String[]{"Lead Screen", "Disclaimer", "About App","References","More Apps"};
+
+    private String LeadScreen="Lead Screen";
+    private String Disclaimer="Dislaimer";
+    private String AboutApp="About App";
+    private String References="References";
+    private String MoreApps="More Apps";
+
+    private String PreviousTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +42,6 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
         mTabLayout=(TabLayout) findViewById(R.id.tabLayout);
 
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
-            private String[] mTitles = new String[]{"Lead Screen", "Disclaimer", "About App","References","More Apps"};
-
             @Override
             public Fragment getItem(int position) {
                 if (position == 1) {
@@ -82,20 +90,46 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
 
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if (tab == mTabLayout.getTabAt(0)) {
+                if(mViewPager.getCurrentItem()==0)
+                    PreviousTitle = getTitle().toString();
+                if(mViewPager.getCurrentItem()!=0) {
+                    if (tab == mTabLayout.getTabAt(0)) {
 //                    one.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
-                    mViewPager.setCurrentItem(0);
-                } else if (tab == mTabLayout.getTabAt(1)) {
+                        mViewPager.setCurrentItem(0);
+                        setTitle(PreviousTitle);
+                    } else if (tab == mTabLayout.getTabAt(1)) {
 //                    two.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
-                    mViewPager.setCurrentItem(1);
-                } else if (tab == mTabLayout.getTabAt(2)) {
+                        mViewPager.setCurrentItem(1);
+                        setTitle(Disclaimer);
+                    } else if (tab == mTabLayout.getTabAt(2)) {
 //                    three.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
-                    mViewPager.setCurrentItem(2);
-                }else if (tab == mTabLayout.getTabAt(3)){
+                        mViewPager.setCurrentItem(2);
+                        setTitle(AboutApp);
+                    } else if (tab == mTabLayout.getTabAt(3)) {
 //                    four.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
-                    mViewPager.setCurrentItem(3);
-                }else if(tab == mTabLayout.getTabAt(4)){
-                    mViewPager.setCurrentItem(4);
+                        mViewPager.setCurrentItem(3);
+                        setTitle(References);
+                    } else if (tab == mTabLayout.getTabAt(4)) {
+                        mViewPager.setCurrentItem(4);
+                        setTitle(MoreApps);
+                    }
+                }else{
+                    if (tab == mTabLayout.getTabAt(1)) {
+//                    two.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(1);
+                        setTitle(Disclaimer);
+                    } else if (tab == mTabLayout.getTabAt(2)) {
+//                    three.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(2);
+                        setTitle(AboutApp);
+                    } else if (tab == mTabLayout.getTabAt(3)) {
+//                    four.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(3);
+                        setTitle(References);
+                    } else if (tab == mTabLayout.getTabAt(4)) {
+                        mViewPager.setCurrentItem(4);
+                        setTitle(MoreApps);
+                    }
                 }
             }
 
@@ -123,24 +157,7 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
 
     @Override
     public void removeAppBar() {
-       /* FragmentManager fragmentManager = getSupportFragmentManager();
-        List<Fragment> fragments = fragmentManager.getFragments();
-        if(fragments != null){
-            for(Fragment fragment : fragments){
-                int id=fragment.getId();
-                System.out.print(id);
-                System.out.print(R.id.reference);
-                if(id==R.id.reference){
-                    System.out.print(id);
-                    System.out.print(R.id.reference);
 
-                    getSupportActionBar().hide();
-
-                }
-            }
-        }
-//        Fragment current = getSupportFragmentManager().findFragmentById(R.id.reference);
-*/
     }
 
 

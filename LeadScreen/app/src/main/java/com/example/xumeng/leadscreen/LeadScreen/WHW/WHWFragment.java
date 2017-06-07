@@ -22,13 +22,14 @@ import java.io.InputStreamReader;
  */
 public class WHWFragment extends Fragment {
 
-    private String filename="WHW";
+    public String filename="WHW";
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 //        getActivity().setTitle("Who How When");
         //update view in layout method:
         StringBuilder text = new StringBuilder();
+
         readFile(text);
         View v = inflater.inflate(R.layout.fragment_whw, container, false);
         TextView myTextView = (TextView)v.findViewById(R.id.whwtext);

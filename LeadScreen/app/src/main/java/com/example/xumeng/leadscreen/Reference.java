@@ -26,6 +26,7 @@ public class Reference extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         LinearLayout l = (LinearLayout) inflater.inflate(R.layout.fragment_reference, container, false);
         ScrollView s = new ScrollView(container.getContext());
         TextView tv = new TextView(container.getContext());

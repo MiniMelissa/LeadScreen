@@ -28,4 +28,6 @@
             app:tabSelectedTextColor="@color/tabtext"
             app:tabTextColor="@color/tabtext">
         </android.support.design.widget.TabLayout>
+
 </LinearLayout>
+
