@@ -39,13 +39,6 @@ public class MainLeadScreen extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 
- /*  public void openWHWScreen(View view){
-        Intent intent = new Intent();
-        intent.setClass(getActivity(), WHWScreen.class);
-        getActivity().startActivity(intent);
-    }
-*/
-
     private void showSimpleDialog() {
         builder=new AlertDialog.Builder(this.getActivity());
         builder.setIcon(R.mipmap.ic_launcher);

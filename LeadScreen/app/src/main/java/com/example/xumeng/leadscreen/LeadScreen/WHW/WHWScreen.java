@@ -16,6 +16,17 @@ public class WHWScreen extends BaseActivity {
         initViews(new WHWFragment());
         initEvents();
         setTitle("Who How When");
+
+//        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+//        toolbar.setTitle("");
+//        TextView toolbarTitle =(TextView) toolbar.findViewById(R.id.toolbar_title);
+//        toolbarTitle.setText("Who How When");
+//        toolbarTitle.setGravity(Gravity.CENTER_HORIZONTAL);
+//        toolbar.setTitle("Who How When");
+//        toolbar.setForegroundGravity(Gravity.CENTER_HORIZONTAL);
+//        toolbarTitle.setForegroundGravity(Gravity.CENTER_HORIZONTAL);
+//        setSupportActionBar(toolbar);
+
 //        getSupportActionBar().hide();
 //        getSupportActionBar().setTitle("Test");
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);

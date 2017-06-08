@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 
 public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragmentInteractionListener{
 
@@ -27,6 +29,8 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
     private String MoreApps="More Apps";
 
     private String PreviousTitle;
+    private Toolbar toolbar;
+    private TextView toolbarTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +77,7 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
         two = mTabLayout.getTabAt(1);
         three = mTabLayout.getTabAt(2);
         four = mTabLayout.getTabAt(3);
-        five=mTabLayout.getTabAt(4);
+        five = mTabLayout.getTabAt(4);
 
         //get icon from ios version
 
@@ -159,6 +163,4 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
     public void removeAppBar() {
 
     }
-
-
 }

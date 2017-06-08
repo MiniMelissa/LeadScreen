@@ -50,5 +50,63 @@
     <string name="v1">http://www.health.ny.gov/environmental/lead/exposure/childhood/regional_lead_resource_centers.htm</string>
 
     <string name="MoreAppTitle">More apps for clinicians by Joshua Steinberg MD</string>
-
+    <string name="PE">Preop Eval</string>
+    <string name="GG">GBS Guide</string>
+    <string name="AAB">ABG Acid-Base</string>
+    <string name="EG">EFM Guide</string>
+    <string name="WG">Warfarin Guide</string>
+    <string name="BS">Bishop Scores</string>
+    <string name="PG">Pneumonia Guide</string>
+    <string name="OW">OB Wheels</string>
+    <string name="PDDT">PE &amp; DVT dx tool</string>
+    <string name="LS">Lead Screen</string>
+    <string name="Pe">PFT eval</string>
+    <string name="rabies">Rabies</string>
+    <string name="GD">Gout Diagnosis</string>
+    <string name="DC">Depo calendar</string>
+    <string name="HM">Health Maint</string>
+    <string name="WP">Which P-vax?</string>
+    <string name="contraception">Contraception</string>
+    <string name="SBS">Step-by-Step</string>
+    <string name="GoToAppStore">Go to iTunes App Store</string>
+    <string name="moreappclaim">I also keep a list of apps* written by anyone (mostly others) which I recommend for clinicians,
+    nurses, residents, and students serving many fields of medicine, especially my home of full-spectrum family medicine. A
+    copy is always online here.</string>
+    <string name="GoToAppList">Go to Apps List</string>
+    <string name="finalstring">* I have no financial relationship or financial benefit from any of these apps, even my own.</string>
 </resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
