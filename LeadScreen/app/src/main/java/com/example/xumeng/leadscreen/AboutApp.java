@@ -9,6 +9,9 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
+import android.text.TextPaint;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
 import android.text.style.UnderlineSpan;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -46,6 +49,8 @@ public class AboutApp extends Fragment {
           LinearLayout l = (LinearLayout)inflater.inflate(R.layout.fragment_about_app, container, false);
           TextView tv = new TextView(container.getContext());
           tv.setText(getClickableSpan());
+          tv.setMovementMethod(LinkMovementMethod.getInstance());
+
           tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
 
           l.addView(tv);
@@ -59,13 +64,14 @@ public class AboutApp extends Fragment {
 
 
     private SpannableStringBuilder getClickableSpan() {
+
+
         StringBuilder text = new StringBuilder();
         readFile(text,filename1);
         String s1=text.toString();
         text=new StringBuilder();
         readFile(text,filename2);
         String s2=text.toString();
-        final String link1=getResources().getString(R.string.ref1);
 
         String content=s1+feedback+address+'\n'+s2;
 
@@ -74,15 +80,32 @@ public class AboutApp extends Fragment {
         SpannableStringBuilder spanStr = new SpannableStringBuilder();
         spanStr.append(content);
 
+        //set gmail address clickable
+        ClickableSpan clickableSpan = new ClickableSpan() {
+            @Override
+            public void onClick(View textView) {
+
+//                Intent intent=new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"+address));
+//                if (intent.resolveActivity(getActivity().getPackageManager())!= null) {
+//                    startActivity(intent);
+//                }
+
+                startActivity(new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"+address)));
+            }
+            @Override
+            public void updateDrawState(TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setUnderlineText(false);
+            }
+        };
+
         //set underline
         spanStr.setSpan(new UnderlineSpan(),start1,end1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         //set link to web
-//        spanStr.setSpan(new URLSpan(link1),start1,end1,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        //open gmail
-        Intent intent=new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"+address));
-        if (intent.resolveActivity(getActivity().getPackageManager())!= null) {
-            startActivity(intent);
-        }
+//         spanStr.setSpan(new URLSpan(link1),start1,end1,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        //set link to gmail activity
+        spanStr.setSpan(clickableSpan,start1,end1,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
         return spanStr;
     }
 
