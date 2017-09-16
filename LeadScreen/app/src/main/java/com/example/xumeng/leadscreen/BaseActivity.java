@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragmentInteractionListener{
 
-    protected ViewPager mViewPager;
+//    protected ViewPager mViewPager;
+    protected NoSwipeViewPager mViewPager;
     protected TabLayout mTabLayout;
 
     protected TabLayout.Tab one;
@@ -42,7 +42,9 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
     }
 
     protected void initViews(final Fragment fragment){
-        mViewPager=(ViewPager) findViewById(R.id.viewPager);
+//        mViewPager=(ViewPager) findViewById(R.id.viewPager);
+        mViewPager=(NoSwipeViewPager) findViewById(R.id.viewPager);
+        mViewPager.setPagingEnabled(false);
         mTabLayout=(TabLayout) findViewById(R.id.tabLayout);
 
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {

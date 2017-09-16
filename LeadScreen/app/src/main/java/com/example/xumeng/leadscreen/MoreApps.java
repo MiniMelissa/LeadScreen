@@ -35,7 +35,7 @@ public class MoreApps extends Fragment implements View.OnClickListener {
        switch(v.getId()) {
            case R.id.gotoPlayStore:
                intent = new Intent(Intent.ACTION_VIEW);
-               intent.setData(Uri.parse("http://play.google.com/store/apps/collection/topselling_free"));
+               intent.setData(Uri.parse("http://play.google.com/store/apps/collection/featured"));
                break;
            case R.id.gotoApplist:
                intent = new Intent(Intent.ACTION_VIEW);
