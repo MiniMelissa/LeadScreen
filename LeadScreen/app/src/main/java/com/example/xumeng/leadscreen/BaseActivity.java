@@ -52,9 +52,9 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
                     return new Disclaimer();
                 } else if (position == 2) {
                     return new AboutApp();
-                }else if (position==3){
+                }else if (position == 3){
                     return new Reference();
-                }else if(position==4){
+                }else if(position == 4){
                     return new MoreApps();
                 }
                 return fragment;
@@ -94,9 +94,12 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
 
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if(mViewPager.getCurrentItem()==0)
+                String tmp= getTitle().toString();
+                if(mViewPager.getCurrentItem()== 0 && !tmp.equals(Disclaimer)
+                        && !tmp.equals(AboutApp) && !tmp.equals(References) && !tmp.equals(MoreApps))
                     PreviousTitle = getTitle().toString();
-                if(mViewPager.getCurrentItem()!=0) {
+
+                if(mViewPager.getCurrentItem()!= 0) {
                     if (tab == mTabLayout.getTabAt(0)) {
 //                    one.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
                         mViewPager.setCurrentItem(0);
@@ -154,7 +157,48 @@ public class BaseActivity extends AppCompatActivity implements AboutApp.OnFragme
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
+                if(mViewPager.getCurrentItem()== 0 )
+                    PreviousTitle = getTitle().toString();
 
+                if(mViewPager.getCurrentItem()!= 0) {
+                    if (tab == mTabLayout.getTabAt(0)) {
+//                    one.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(0);
+                        setTitle(PreviousTitle);
+                    } else if (tab == mTabLayout.getTabAt(1)) {
+//                    two.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(1);
+                        setTitle(Disclaimer);
+                    } else if (tab == mTabLayout.getTabAt(2)) {
+//                    three.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(2);
+                        setTitle(AboutApp);
+                    } else if (tab == mTabLayout.getTabAt(3)) {
+//                    four.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(3);
+                        setTitle(References);
+                    } else if (tab == mTabLayout.getTabAt(4)) {
+                        mViewPager.setCurrentItem(4);
+                        setTitle(MoreApps);
+                    }
+                }else{
+                    if (tab == mTabLayout.getTabAt(1)) {
+//                    two.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(1);
+                        setTitle(Disclaimer);
+                    } else if (tab == mTabLayout.getTabAt(2)) {
+//                    three.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(2);
+                        setTitle(AboutApp);
+                    } else if (tab == mTabLayout.getTabAt(3)) {
+//                    four.setIcon(getResources().getDrawable(R.drawable.ic_favorite_black_18dp));
+                        mViewPager.setCurrentItem(3);
+                        setTitle(References);
+                    } else if (tab == mTabLayout.getTabAt(4)) {
+                        mViewPager.setCurrentItem(4);
+                        setTitle(MoreApps);
+                    }
+                }
             }
         });
     }

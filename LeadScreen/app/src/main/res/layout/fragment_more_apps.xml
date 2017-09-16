@@ -170,13 +170,13 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/gotoAppStore"
+                android:id="@+id/gotoPlayStore"
                 android:backgroundTint="@android:color/white"
                 android:text="@string/GoToAppStore"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textAllCaps="false"
-                android:textSize="@dimen/moreapptext1"/>
+                android:textSize="@dimen/moreapptext1" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -194,7 +194,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textAllCaps="false"
-                android:textSize="@dimen/moreapptext1"/>
+                android:textSize="@dimen/moreapptext1" />
 
             <TextView
                 android:layout_width="wrap_content"
