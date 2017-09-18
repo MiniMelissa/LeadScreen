@@ -25,7 +25,8 @@ public class MoreApps extends Fragment implements View.OnClickListener {
 
         Button topList = (Button) v.findViewById(R.id.gotoPlayStore);
         topList.setOnClickListener(this);
-
+        Button doclist = (Button) v.findViewById(R.id.gotoApplist);
+        doclist.setOnClickListener(this);
         return v;
     }
 
@@ -35,13 +36,12 @@ public class MoreApps extends Fragment implements View.OnClickListener {
        switch(v.getId()) {
            case R.id.gotoPlayStore:
                intent = new Intent(Intent.ACTION_VIEW);
-               intent.setData(Uri.parse("http://play.google.com/store/apps/collection/featured"));
+               intent.setData(Uri.parse("https://play.google.com/store/apps/developer?id=Joshua+Steinberg+MD"));
                break;
            case R.id.gotoApplist:
                intent = new Intent(Intent.ACTION_VIEW);
-
-//               intent.setData(Uri.parse("https://play.google.com/store/apps/dev?id=<developer_id>"));
-                break;
+               intent.setData(Uri.parse("https://docs.wixstatic.com/ugd/cd92db_a2edb67225874be49f37954b7df7a373.doc?dn=Apps%20list%206-17.doc"));
+               break;
            default:break;
        }
        startActivity(intent);
