@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryFragment">
+    tools:context="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -4,7 +4,7 @@
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.xumeng.leadscreen.MainLeadScreen">
+    tools:context="com.medical.xumeng.leadscreen.MainLeadScreen">
 
     <RelativeLayout
         android:layout_width="match_parent"

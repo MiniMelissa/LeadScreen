@@ -2,7 +2,7 @@
     <!--button name-->
     <string name="app_name">Lead Screen</string>
     <string name="choose">Choose a Lead Screening resource</string>
-    <string name="whwToScreen">Who,How,When to Screen</string>
+    <string name="whwToScreen">Who, How, When to Screen</string>
     <string name="manageLevels">How to Manage Lead Levels</string>
     <string name="symptoms">Signs/Symptoms Lead Poisoning</string>
     <string name="risksurvey">Lead Exposure Risk Survey</string>

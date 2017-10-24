@@ -2,7 +2,7 @@
     <!--android:theme="@style/AppTheme">-->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.xumeng.leadscreen">
+    package="com.medical.xumeng.leadscreen">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.medical.xumeng.leadscreen.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,83 +23,83 @@
         <fragment android:name=".Reference" />
 
         <activity
-            android:name=".LeadScreen.WHW.WHWScreen"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.WHW.WHWScreen"
+            android:parentActivityName="com.medical.xumeng.leadscreen.MainActivity" />
 
         <fragment android:name=".MainLeadScreen" />
 
-        <activity android:name=".LeadScreen.WHW.SubSuveyScreen" android:parentActivityName=".LeadScreen.WHW.WHWScreen"/>
+        <activity android:name="com.medical.xumeng.leadscreen.LeadScreen.WHW.SubSuveyScreen" android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.WHW.WHWScreen"/>
 
         <activity
-            android:name=".LeadScreen.SignLeadPoison.Symptoms"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.SignLeadPoison.Symptoms"
+            android:parentActivityName="com.medical.xumeng.leadscreen.MainActivity" />
         <activity
-            android:name=".LeadScreen.Survey.SurveyScreen"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Survey.SurveyScreen"
+            android:parentActivityName="com.medical.xumeng.leadscreen.MainActivity" />
         <activity
-            android:name=".LeadScreen.Evaluation.EvaluationScreen"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Evaluation.EvaluationScreen"
+            android:parentActivityName="com.medical.xumeng.leadscreen.MainActivity" />
         <activity
-            android:name=".LeadScreen.GuideLine.GuideLineScreen"
-            android:parentActivityName=".MainActivity" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.GuideLine.GuideLineScreen"
+            android:parentActivityName="com.medical.xumeng.leadscreen.MainActivity" />
         <activity
-            android:name=".LeadScreen.Levels.LevelScreen"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".BaseActivity" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.LevelScreen"
+            android:parentActivityName="com.medical.xumeng.leadscreen.MainActivity" />
+        <activity android:name="com.medical.xumeng.leadscreen.BaseActivity" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CappilaryTest"
-            android:parentActivityName=".LeadScreen.Levels.LevelScreen" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.LevelScreen" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VenousTest"
-            android:parentActivityName=".LeadScreen.Levels.LevelScreen" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.LevelScreen" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CLevelFine"
-            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelFine"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CLevelNine"
-            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelNine"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CLevelTwoFour"
-            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelTwoFour"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CLevelFourFour"
-            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelFourFour"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CLevelOneFour"
-            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelOneFour"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CLevelFiveNine"
-            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelFiveNine"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CLevelSixNine"
-            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelSixNine"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest" />
         <activity
-            android:name=".LeadScreen.Levels.Cappilary.CLevelSeventy"
-            android:parentActivityName=".LeadScreen.Levels.Cappilary.CappilaryTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CLevelSeventy"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Cappilary.CappilaryTest" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VLevelFive"
-            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VLevelFive"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VLevelNine"
-            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VLevelNine"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VLevelOneFour"
-            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VLevelOneFour"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VLevelTwoFour"
-            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VLevelTwoFour"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VLevelFourFour"
-            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VLevelFourFour"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VLevelFiveNine"
-            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VLevelFiveNine"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VLevelSixNine"
-            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VLevelSixNine"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest" />
         <activity
-            android:name=".LeadScreen.Levels.Venous.VLevelSeventy"
-            android:parentActivityName=".LeadScreen.Levels.Venous.VenousTest" />
+            android:name="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VLevelSeventy"
+            android:parentActivityName="com.medical.xumeng.leadscreen.LeadScreen.Levels.Venous.VenousTest" />
 
     </application>
 

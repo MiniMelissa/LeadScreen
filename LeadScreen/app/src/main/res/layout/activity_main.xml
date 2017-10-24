@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="com.example.xumeng.leadscreen.MainActivity">
+    tools:context="com.medical.xumeng.leadscreen.MainActivity">
 
     <include layout="@layout/activity_base"
         android:layout_width="match_parent"
